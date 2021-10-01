@@ -1,3 +1,5 @@
+
+
 const {
 tiktok,
 tiktokmusic,
@@ -34,7 +36,7 @@ wallpapper,
 sfilesearch,
 servermc,
 hoax
-} = require('dl.js');
+} = require('./dl.js');
 
 module.exports.tiktok = tiktok
 module.exports.tiktokmusic = tiktokmusic
