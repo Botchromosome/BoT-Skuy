@@ -53,11 +53,11 @@ const got = require("got");
 const imageToBase64 = require('image-to-base64');
 const ID3Writer = require('browser-id3-writer');		
 //const brainly = require('brainly-scraper')
-const yts = require('yt-search')
-const crypto = require('crypto')
+//const yts = require('yt-search')
+//const crypto = require('crypto')
 //const ms = require('parse-ms')
-const ms = import('parse-ms')
-const toMs = require('ms')
+//const ms = import('parse-ms')
+//const toMs = require('ms')
 const setting = JSON.parse(fs.readFileSync('./settings.json'))
 
 const { error } = require("qrcode-terminal")
