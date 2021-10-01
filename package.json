@@ -1,18 +1,22 @@
 {
-  "name": "base-bot-whatapp",
-  "version": "0.0.1",
-  "description": "KARENA LU WIBU",
+  "name": "SelfBot",
+  "version": "1.0.0",
+  "description": "SELFBOT",
   "main": "run.js",
+  "directories": {
+    "lib": "lib"
+  },
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.2",
     "async": "^3.2.1",
-    "awesome-phonenumber": "^2.60.0",
+    "awesome-phonenumber": "^2.62.0",
     "axios": "^0.21.4",
     "base64-to-image": "^1.0.2",
     "browser-id3-writer": "^4.4.0",
     "cfonts": "^2.10.0",
     "child_process": "^1.0.2",
     "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "fake-useragent": "^1.0.1",
@@ -38,25 +42,17 @@
     "syntax-error": "^1.4.0"
   },
   "scripts": {
-    "start": "node run",
+    "start": "node run.js",
     "test": "supervisor main"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FERDIZ-afk/base-bot-whatsapp.git"
+    "type": "git"
   },
   "keywords": [
-    "base",
-    "bot"
+    "self bot wa"
   ],
-  "author": "FERDIZ-afk",
+  "author": "SELFBOT",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FERDIZ-afk/base-bot-whatsapp/issues"
-  },
-  "homepage": "https://github.com/FERDIZ-afk/base-bot-whatsapp#readme",
-  "directories": {
-    "lib": "lib"
-  },
-  "devDependencies": {}
+  "bugs": {},
+  "homepage": "https://github.com/FERDIZ-afk"
 }
