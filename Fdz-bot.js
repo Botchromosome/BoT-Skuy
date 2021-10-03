@@ -877,7 +877,7 @@ case prefix+'menu': menu = `
 ⚙️ ${prefix}tebakbendera
 ⚙️ ${prefix}suit *batu/kertas/gunting*
 `
-
+break
 case prefix+'group-open':
       if (!isGroup) return fakestatus('```ONLY GROUP```')
     if (!isGroupAdmins) return fakestatus('```Hanya untuk admin```')
