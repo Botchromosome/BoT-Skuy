@@ -529,27 +529,7 @@ fdz.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options)
 
 
 
-if (budy.includes("https://chat.whatsapp.com/")) {
-if (!isGroup) return
-if (isGroupAdmins) return
-var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-reply(`「 ANTI LINK TERDETEKSI 」\n\nKamu mengirimkan link di grup chat [ ! ] \nMaaf kamu di kick dari grup >_<`)
-setTimeout(() => {
-fdz.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
-}, 0)
-}
 
-// 𝙁𝙐𝙉𝙏𝙄𝙊𝙉 𝘼𝙉𝙏𝙄 𝙑𝙄𝙍𝙐𝙎
-if (budy.length > 800) {
-if (!isGroup) return
-if (isGroupAdmins) return
-var kice = `${sender.split("@")[0]}@s.whatsapp.net`
-reply('TANDAI TELAH DIBACA\n'.repeat(420))
-reply(`「 ANTI VIRUS TERDETEKSI 」\n\nKamu mengirimkan virus di grup chat [ ! ] \nMaaf kamu di kick dari grup >_<`)
-setTimeout(() => {
-fdz.groupRemove(from, [kice]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
-}, 0)
-}
 
 //FUNCTION
         const sendStickerFromUrl = async(to, url) => {
