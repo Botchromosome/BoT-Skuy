@@ -976,6 +976,15 @@ case prefix+'listadmin':
 					}
 					mentions(teks, groupAdmins, true)
 					break
+		    case 'addprem':
+if (!isOwner)return mentions(`*Perintah ini Khusus @${owner} !*`, [`${owner}@s.whatsapp.net`])
+if (!q)return reply(`*Format Error!*\n\n*Example :*\n${unique[0]} *${prefix + command} @tag 10d*\n\n*Note :*\n${unique[0]} s : detik\n${unique[0]} m : menit\n${unique[0]} h : jam\n${unique[0]} d : hari\n\n*Tq To : ${watermark}*`)
+expired = q.split(" ")[1]
+const pnom = {id: `${q.split(" ")[0].replace("@",'')}@s.whatsapp.net`,expired: Date.now() + toMs(expired) }
+premium.push(pnom) 
+fs.writeFileSync('./database/premium.json',JSON.stringify(premium))
+reply(`_Succses_`)
+break
 case prefix+'inspect':
 		            try {
 		            if (!isUrl(args[0]) && !args[0].includes('chat.whatsapp.com')) return reply(mess.Iv)
