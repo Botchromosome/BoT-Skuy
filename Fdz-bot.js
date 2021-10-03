@@ -66,6 +66,7 @@ const { color, bgcolor } = require('./lib/color')
 const { fetchJson, getBase64, kyun, createExif } = require('./lib/fetcher')
 const user = JSON.parse(fs.readFileSync('./database/json/user.json'))
 const premium = JSON.parse(fs.readFileSync('./database/premium.json'))
+const _prem = require("./lib/premium"); 
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 
 //setting\\
