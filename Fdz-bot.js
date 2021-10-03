@@ -65,6 +65,7 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 const { color, bgcolor } = require('./lib/color')
 const { fetchJson, getBase64, kyun, createExif } = require('./lib/fetcher')
 const user = JSON.parse(fs.readFileSync('./database/json/user.json'))
+const premium = JSON.parse(fs.readFileSync('./database/premium.json'))
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 
 //setting\\
