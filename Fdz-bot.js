@@ -163,6 +163,7 @@ isCharge: "" || false
 		const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
 		const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 		const isPremium = isOwner ? true : _prem.checkPremiumUser(sender, premium)
+		const gcount = isPremium ? gcounti.prem : gcounti.user
 		const isGroupAdmins = groupAdmins.includes(sender) || false
 
    const istMe = botNumber
