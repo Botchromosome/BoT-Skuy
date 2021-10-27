@@ -84,7 +84,7 @@ hit_today = [] // jangan diubah
 blocked = [] // jangan diubah
 
 
-ownerr = '6287877173955' // jangan diubah
+ownerr = '6281804832728' // jangan diubah
 numbernye = '0' // jangan diubah
 
 
