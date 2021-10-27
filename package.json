@@ -1,7 +1,7 @@
 {
-  "name": "SelfBot",
+  "name": "BOTCHM",
   "version": "1.0.0",
-  "description": "SELFBOT",
+  "description": "BOTCHM",
   "main": "run.js",
   "directories": {
     "lib": "lib"
@@ -51,7 +51,7 @@
   "keywords": [
     "self bot wa"
   ],
-  "author": "SELFBOT",
+  "author": "BOTCHM",
   "license": "ISC",
   "bugs": {},
   "homepage": "https://github.com/FERDIZ-afk"
